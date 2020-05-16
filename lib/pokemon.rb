@@ -31,7 +31,6 @@ class Pokemon
     DB[:conn].execute(sql, id).map do |row|
       self.new_from_db(row)
     end.first
-    
   end 
   
    def self.new_from_db(row)
