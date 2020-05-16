@@ -21,7 +21,13 @@ class Pokemon
     
   end 
   
-  def self.find
+  def self.find(id)
+    sqp = <<-SQL
+    SELECT * FROM pokemon
+    WHERE id = ?
+    LIMIT 1 
+    SQL
+    
   end 
   
 end
