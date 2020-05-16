@@ -11,6 +11,8 @@ class Pokemon
   end 
   
   def self.save
+    pokemon = self.new(name:, type:, db:)
+    
   end 
   
   def self.find
