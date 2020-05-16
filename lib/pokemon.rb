@@ -10,7 +10,7 @@ class Pokemon
     @id = id
   end 
   
-  def self.save
+  def save
      sql = <<-SQL
         INSERT INTO pokemon (name, type, db)
         VALUES (?, ?, ?)
@@ -21,7 +21,7 @@ class Pokemon
     
   end 
   
-  def self.find(id)
+  def find(id)
     sqp = <<-SQL
     SELECT * FROM pokemon
     WHERE id = ?
