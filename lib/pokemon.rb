@@ -28,6 +28,8 @@ class Pokemon
     LIMIT 1 
     SQL
     
+    
+    
   end 
   
 end
