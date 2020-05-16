@@ -29,7 +29,7 @@ class Pokemon
     SQL
     
     DB[:conn].execute(sql, id).map do |row|
-      self.save(row)
+      self.new_from_db(row)
     end.first
     
   end 
