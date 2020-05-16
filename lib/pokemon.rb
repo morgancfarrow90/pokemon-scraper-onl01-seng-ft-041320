@@ -34,4 +34,9 @@ class Pokemon
     
   end 
   
+   def self.new_from_db(row)
+    pokemon = self.new(row[1], row[2], row[0])
+    pokemon
+  end
+  
 end
